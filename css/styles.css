@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url(../imgs/fondo.png);
+  padding: 30px 15px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+/* Thrasher */
+.login.logo {
+  text-align:center;
+}
+
+/* Form */
+.login {
+  width: 100%;
+  max-width: 800px;
+  background-color: #FFF;
+  display: -webkit-box;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.4);
+}
+
+/* Form login*/
+.login .login-form {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+  max-width: 50%;
+  background-color: #fff;
+  padding: 35px 45px;
+}
+
+/* Subtitle */
+.login .login-form .login-title {
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #767676;
+  margin-bottom: 25px;}
+  
+  /* Buttons */
+  .login .login-form .social-buttons {
+    display: -webkit-box;
+    display: flex;
+    margin: 0 -7.5px;
+  }
+  
+  /* Buttons */
+  .login .login-form .social-buttons .social-button {
+    -webkit-box-flex: 1;
+    flex: 1 0 calc(50% - 15px);
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 5px;
+    color: #FFF;
+    text-decoration: none;
+    margin: 0 7.5px;
+  }
+  
+  /* Background button facebook */
+  .login .login-form .social-buttons .social-button.facebook {
+    background-color: #4267B2;
+  }
+  
+  /* Icon facebook */
+  .login .login-form .social-buttons .logo-facebook{
+    width:19px;
+    height:19px;
+    margin-right:7px;
+  }
+  
+  /* Background button Instagram */
+  .login .login-form .social-buttons .social-button.instagram {
+    background: linear-gradient(to right, #FFDD55, #FF543E, #C837AB);
+  }
+  
+  /* Icon instagram */
+  .login .login-form .social-buttons .logo-instagram{
+    width:19px;
+    height:19px;
+    margin-right:7px;
+  }
+  
+  /* Margin button icon */
+  .login .login-form .social-buttons .social-button .button-icon {
+    margin-right: 5px;
+  }
+  
+  /* Font size button */
+  .login .login-form .social-buttons .social-button .button-text {
+    font-size: 0.9rem;
+  }
+  
+  /* Text separator*/
+  .login .login-form .or-separator {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 50px 0px;
+    color: #727272;
+  }
+  
+  /* Margin wrapper */
+  .login .login-form .form-wrapper .input-wrapper:not(:last-child) {
+    margin-bottom: 15px;}
+    
+    /* Imput line */
+    .login .login-form .form-wrapper .input-wrapper .label, .login .login-form .form-wrapper .input-wrapper .input {
+      display: block;
+      width: 100%;}
+      
+      
+      /* Email & Password*/
+      .login .login-form .form-wrapper .input-wrapper .label {
+        padding-bottom: 3px;
+        font-size: 0.9rem;
+        color:#727272;}
+        
+        
+        /* Line separator*/
+        .login .login-form .form-wrapper .input-wrapper .input {
+          padding: 10px;
+          border: 0;
+          border-bottom: 1px solid #C4C4C4;
+        }
+        
+        /* Padding wrapper */
+        .login .login-form .form-wrapper .actions-help {
+          display: -webkit-box;
+          display: flex;
+          -webkit-box-pack: justify;
+          justify-content: space-between;
+          padding: 50px 0 30px;
+        }
+        
+        /* Checkbox space*/
+        .login .login-form .form-wrapper .actions-help .check-wrapper .checkbox {
+          margin-right: 5px;
+        }
+        
+        /* Forgot Password*/
+        .login .login-form .form-wrapper .actions-help .help-link {
+          color: #333;
+          text-decoration: none;
+          -webkit-transition: color 0.3s ease-in-out;
+          transition: color 0.3s ease-in-out;
+        }
+        
+        /* Login - Signup */
+        .login .login-form .form-wrapper .actions .action {
+          display: inline-block;
+          padding: 10px 30px;
+          border-radius: 5px;
+          border: 1px solid #c7c7c7;
+          color: #333; 
+          text-decoration: none;
+          background-color: #fff;
+          margin-bottom: 10px;
+          }
+        
+        /* Background button login */
+        .login .login-form .form-wrapper .actions .action.m--login {
+          background-color: #ffffff;
+        }
+        
+        /* Image login */
+        .login .login-decoration {
+          -webkit-box-flex: 1;
+          flex-grow: 1;
+          flex-shrink: 0;
+          flex-basis: auto;
+          background-image: url(../imgs/portada.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        
+        /* -----------------  media queries ----------------------------------- */
+        
+        @media only screen and (max-width: 767.98px) {
+          .login .login-form {
+            max-width: 100%;
+          }
+        }
+        
+        @media only screen and (max-width: 575.98px) {
+          .login .login-form {
+            padding: 40px 20px;
+          }
+        }
+        
+        
+        @media only screen and (max-width: 575.98px) {
+          .login .login-form .social-buttons {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+          }
+        }
+        
+        @media only screen and (max-width: 575.98px) {
+          .login .login-form .social-buttons .social-button {
+            max-width: 100%;
+            margin-bottom: 10px;
+          }
+        }
+        
+        @media only screen and (max-width: 575.98px) {
+          .login .login-form .form-wrapper .actions-help {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+          }
+        }
+        
+        @media only screen and (max-width: 575.98px) {
+          .login .login-form .form-wrapper .actions-help .check-wrapper {
+            margin-bottom: 15px;
+          }
+        }
+        
+        
+        @media only screen and (max-width: 767.98px) {
+          .login .login-decoration {
+            display: none;
+          }
+        }
+        
+        /* -----------------  media queries ----------------------------------- */
